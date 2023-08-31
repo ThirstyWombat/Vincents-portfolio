@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap");
-* {
-  /* border: solid 1px red; */
-}
+
 body {
   font-family: "Roboto", sans-serif;
   color: #222222;
@@ -63,11 +61,10 @@ nav {
 }
 aside {
   min-width: 350px;
-  /* padding: 80px; */
+
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 30px; */
 }
 
 main {
@@ -99,4 +96,70 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+footer {
+  background-color: #1c5d99;
+}
+.footerContainer {
+  max-width: 1600px;
+  padding: 15px;
+  justify-content: space-between;
+  display: flex;
+  margin: auto;
+}
+.footerName {
+  display: flex;
+  color: #f5f5f5;
+  align-items: center;
+  margin-left: 10px;
+}
+.contactInfo {
+  display: flex;
+  font-size: 30px;
+  justify-content: space-around;
+  max-width: 900px;
+  width: 60%;
+  align-items: end;
+  margin-right: 30px;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.contactItem {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.contactItem:hover {
+  color: #bbcde5;
+  text-decoration: underline;
+}
+@media screen and (max-width: 980px) {
+  nav {
+    display: none;
+  }
+  .content {
+    display: block;
+  }
+  .footerContainer {
+    display: block;
+  }
+  .contactInfo {
+    display: block;
+    margin-bottom: 3px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-container {
+    display: block;
+  }
+  .headerName {
+    font-size: 40px;
+  }
+  .footerName {
+    font-size: 40px;
+  }
+  .contactInfo {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
 }
